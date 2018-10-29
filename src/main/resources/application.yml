@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: hystrix-dashboard-service
+server:
+  port: 7979
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: hystrix.stream
+#      base-path: *
+
+#http://localhost:7979/hystrix/monitor?stream=http%3A%2F%2F192.168.0.6%3A7878%2Fturbine.stream
+
+#go to
+#http://localhost:7979/hystrix
+
+#enter below stream url in box
+#http://192.168.0.6:7878/turbine.stream
